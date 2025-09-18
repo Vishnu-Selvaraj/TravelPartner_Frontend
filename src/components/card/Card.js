@@ -23,7 +23,6 @@ const Card = (props) => {
     }, 2000);
   }, []);
 
-  console.log(props, "CARD");
 
   return (
     <div className="row">

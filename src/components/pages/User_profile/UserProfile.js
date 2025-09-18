@@ -54,7 +54,6 @@ function UserProfile() {
     }
   };
 
-  console.log(activepage);
 
   return (
     <div id="userProfileMainDiv">

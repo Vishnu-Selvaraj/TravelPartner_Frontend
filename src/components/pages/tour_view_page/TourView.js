@@ -71,7 +71,7 @@ function TourView() {
         `get-view-tour-details/${tourId}`,
         options
       );
-      console.log(response);
+      // console.log(response);
       setTourData(response.data.data.tour_data);
       setTourItinerary(response.data.data.itinerary);
     } catch (error) {
@@ -86,7 +86,6 @@ function TourView() {
       },
     };
 
-    console.log("Hai from booking");
     if (!noOfPersons && !bookingDate) {
       toast.error("please fill all fields!", {
         className: "toastErrorMessage",
@@ -152,7 +151,6 @@ function TourView() {
         }
       }
     }
-    console.log(totalPrice, noOfPersons, bookingDate);
   };
 
   return (

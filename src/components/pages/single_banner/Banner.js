@@ -3,7 +3,6 @@ import "../tours_List_page/TourList.css";
 
 function Banner(props) {
 
-    console.log(props.bannerImg)
   return (
     <div className="row">
       <div className="col bannerImg d-flex justify-content-center align-items-center" style={{background: `rgba(0, 0, 0, 0.12) url("${props.bannerImg}") no-repeat center center/cover`, width:'100vw'}}>

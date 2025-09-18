@@ -42,7 +42,6 @@ const BookingConfirmation = () => {
         `get-confirmation-details/${tour_id}`,
         options
       );
-      console.log(response);
       setBookingData(response.data.data);
       setPlaceName(response.data.place_name);
     } catch (error) {
@@ -50,7 +49,6 @@ const BookingConfirmation = () => {
     }
   };
 
-  console.log(bookingData, placeName);
 
   return (
     <div id="BookingConfirmMainDiv">

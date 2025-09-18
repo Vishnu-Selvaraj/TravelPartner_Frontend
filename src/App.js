@@ -18,7 +18,7 @@ export function App() {
   const fetchData = async () => {
     try {
       const response = await Axios.get("get-homepage-tour-data");
-      console.log(response, "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
+      // console.log(response, "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
       setData(response.data.data);
 
     } catch (error) {

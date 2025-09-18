@@ -20,7 +20,7 @@ const Navbar = () => {
       };
       try {
         const response = await Axios.post("logout", {}, options);
-        console.log(response.data.message);
+        // console.log(response.data.message);
 
         {
           /* =============================================== In below removing the backdrop-effect by modal after click on book button ===================================================  */

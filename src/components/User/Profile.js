@@ -44,7 +44,6 @@ const Profile = (props) => {
         Authorization:`Token ${token}`
       }
     }
-    console.log(name,email,phoneNumber)
     try{
       const updateResponse = await Axios.post('edit-user-data',{
         name:name,

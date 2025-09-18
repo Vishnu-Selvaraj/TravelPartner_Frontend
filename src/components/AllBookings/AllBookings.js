@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import BookingsCard from "../Booking_card/BookingsCard";
-import axios from "axios";
 import "./allBookings.css";
 import Search from "../search/Search";
 import Modal from "../Modal/Modal";
 import toast from "react-hot-toast";
 import "../loader/loader.css";
 import LoaderAnimation from "../LoaderAnimation/LoaderAnimation";
+import { Axios } from "../../axiosInstance/AxiosInstance";
 
 function AllBookings() {
   const [selectedOption, setSelectedOption] = useState("Upcoming");
@@ -48,11 +48,11 @@ function AllBookings() {
     };
 
     try {
-      const response = await axios.get(
-        `http://127.0.0.1:8000/api/get-all-user-booking/${selectedOption}/`,
+      const response = await Axios.get(
+        `get-all-user-booking/${selectedOption}/`,
         options
       );
-      console.log(response.data);
+      // console.log(response.data);
       setErrorMessage("");
       setUserBookingData(response.data.user_booking_data);
       setFilteredData(response.data.user_booking_data);
@@ -99,8 +99,8 @@ function AllBookings() {
 
     if (token) {
       try {
-        const response = await axios.post(
-          "http://127.0.0.1:8000/api/cancel-user-booking/",
+        const response = await Axios.post(
+          "cancel-user-booking/",
           { user_booking_id: userBookingId },
           options
         );

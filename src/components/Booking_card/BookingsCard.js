@@ -9,9 +9,6 @@ import { Axios } from "../../axiosInstance/AxiosInstance";
 
 
 function BookingsCard(props) {
-
-  console.log('props updated')
-
   var token = JSON.parse(localStorage.getItem('userToken'))
 
   const handlePdfDownload = async (booking_id,place_name)=>{
@@ -21,9 +18,7 @@ function BookingsCard(props) {
       }
     }
     try{
-      console.log(booking_id)
       const response = await Axios.get(`get-user-booking-pdf/${booking_id}/`,options) 
-      console.log(response)
 
       //Download pdf from backend
       let bool = new Blob([response.data],{type:'application/pdf'})
@@ -43,7 +38,6 @@ function BookingsCard(props) {
   //Invoke and pass booking_id to call back function **getUserBookingID**
 
   const handleCancelBooking = (booking_id)=>{
-    console.log(booking_id)
     props.getUserBookingID(booking_id)
 
   }

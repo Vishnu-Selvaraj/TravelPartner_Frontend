@@ -35,7 +35,6 @@ function TourList() {
     }
     try{
       const response = await Axios.get('get-all-tour-list',options)
-      console.log(response.data.data)
       setTourData(response.data.data)
       setFilteredData(response.data.data)
      }catch(error){
