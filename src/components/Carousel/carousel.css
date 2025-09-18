@@ -1,0 +1,18 @@
+.c-container{
+    aspect-ratio: 16/6;
+  }
+  
+  .c-image{
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    filter: brightness(0.76);
+  }
+  
+  .carousel-container{
+    padding-top: 5px;
+  }
+  
+  .carousel-caption h1{
+    text-shadow: 2px 2px 10px #000;
+  }
+  

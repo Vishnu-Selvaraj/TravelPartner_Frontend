@@ -1,0 +1,81 @@
+#mainCard{
+    box-shadow: 0px 0px 3px #111;
+    transition: transform 0.7s;
+    position: relative;
+    animation: cardSlideUp ease-in-out 2s;
+}
+
+#mainCard:hover{
+    transform: translateY(-20px);
+}
+
+#card-image{
+    aspect-ratio: 16/9 !important;
+}
+
+#cardBody{
+    aspect-ratio: 16/4 !important;
+}
+
+.card-days{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 4px 15px !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #222;
+    font-weight: 500;
+}
+
+
+.title-icon{
+    margin-top: -4px;
+}
+
+.notFoundImage{
+    width: 500px;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+    animation: imageslide ease-in-out 0.8s;
+}
+
+.notFoundText{
+    animation: imageslide ease-in-out 0.8s;
+}
+
+@media screen and (max-width:600px){
+    #cardColumn{
+        margin: auto;
+    }
+}
+
+/* @media screen and (max-width:1200px) and (min-width:768px){
+    #priceCardRow{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+} */
+
+@keyframes imageslide {
+    0%{
+        opacity: 0;
+        scale: 0.5;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes cardSlideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}

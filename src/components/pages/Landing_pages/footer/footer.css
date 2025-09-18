@@ -1,0 +1,42 @@
+#footerBody{
+    background-color: #ADDFFF;
+}
+
+#footerimgLogo{
+    width: 60px;
+    padding: 0px 5px;
+    transition: all 1s ease-in-out;
+}
+
+#footerimgLogo:hover{
+    transform: rotate(180deg);
+}
+
+#footer-img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px #111);
+    aspect-ratio: auto;
+
+}
+
+.footer-icons{
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-icons:hover{
+    transform: translateY(-10px);
+    
+}
+
+.footer-nav{
+    transition: color ease-in-out 0.4s;
+    
+}
+
+.footer-nav:hover{
+    color: #0d6efd !important;
+    
+}
+

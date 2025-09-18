@@ -1,0 +1,53 @@
+#TourListBody{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+.bannerImg{
+    background-blend-mode: darken;
+    margin-top: 5px;
+    aspect-ratio: 16/5;
+    animation: imageAnimation 1.8s ease-in-out ;
+}
+
+.Listheading{
+    text-shadow: 2px 2px 6px #111;
+}
+
+.Listheading{
+    animation: headingSlide 2.3s;
+}
+
+@keyframes headingSlide {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes imageAnimation {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:600px){
+    .bannerImg{
+        aspect-ratio: 16/6;
+    }
+    .Listheading{
+        font-size: xx-large;
+    }
+}
+

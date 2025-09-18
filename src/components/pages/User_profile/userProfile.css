@@ -1,0 +1,53 @@
+#userProfileMainDiv{
+    overflow-x: hidden;
+}
+
+#userProfileNav .nav-link{
+    color: #8e8e8e;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+#userProfileNav .nav-link:hover{
+    background:#2196f3;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+
+}
+
+#userProfileNav .nav-item .nav-link.active{
+    background:#48a0e9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.subNav-items{
+    animation: optionsLoading 3s ease-in;
+}
+
+@keyframes optionsLoading {
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    50%{
+        opacity: 0.4;
+        transform: translateY(-10px);
+    }
+
+    50%{
+        opacity: 0.6;
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

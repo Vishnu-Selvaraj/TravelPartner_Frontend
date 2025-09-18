@@ -1,0 +1,51 @@
+.bookingHeading{
+    color: #45a2ee;
+    animation: bookingHeading 2s ease-in-out;
+}
+
+.bookingTable{
+    animation: bookingtableanimation 2s ease-in-out;
+}
+
+.bookingDropdown{
+    animation: bookingDropdownanimation 2s ease-in-out;
+}
+
+
+.errorText{
+    color: #0e88ec !important;
+    text-shadow: 1px 1px 3px #2c2c2c;
+}
+
+@keyframes bookingHeading {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bookingtableanimation {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bookingDropdownanimation {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

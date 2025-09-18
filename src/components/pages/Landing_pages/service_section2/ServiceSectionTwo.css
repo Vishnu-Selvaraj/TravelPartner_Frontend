@@ -1,0 +1,22 @@
+.serviceCard{
+    box-shadow: 0px 0px 4px #111;
+    transition: all 0.6s;
+
+}
+
+.serviceCard:hover{
+    transform: translateX(10px) translateY(-10px);
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .serviceSectionTwopara{
+      font-size: x-small;
+    }
+  }
+  
+@media screen and (min-width:768px){
+    .serviceSectionTwopara{
+      font-size: small;
+    }
+  }
