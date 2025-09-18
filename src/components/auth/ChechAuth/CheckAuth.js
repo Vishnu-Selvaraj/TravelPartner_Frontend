@@ -9,6 +9,8 @@ const CheckAuth = (Component) => {
     const navigate = useNavigate();
 
     useEffect(() => {
+      //Check one more time if the token added or not
+      const token = JSON.parse(localStorage.getItem("userToken"));
       if (!token) {
         toast('👨🏻‍💻Please login for further access',
             {style:{
