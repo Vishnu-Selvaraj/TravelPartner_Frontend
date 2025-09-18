@@ -45,7 +45,7 @@ const Navbar = () => {
     <div id="navbarBg">
       <nav className="navbar navbar-expand-lg navbar-light pe-4" id="navbar">
         <div className="container-fluid">
-          <NavLink className="navbar-brand ms-5 fw-bold" to={"/"}>
+          <NavLink className="navbar-brand ms-3 ms-md-5 fw-bold" to={"/"}>
             <img src={logo} id="imgLogo" alt="" />
             TRAVEL PARTNER
           </NavLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to={"tourList"}
+                  to={"/tourList"}
                 >
                   Tours
                 </NavLink>

@@ -54,7 +54,6 @@ function UserProfile() {
     }
   };
 
-
   return (
     <div id="userProfileMainDiv">
       <Navbar />

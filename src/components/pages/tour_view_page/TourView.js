@@ -192,7 +192,7 @@ function TourView() {
             {/* =============================================== rightside top card ===================================================  */}
 
             <div className="row">
-              <div className="col-6 col-md-12">
+              <div className="col-12 col-md-12">
                 <div
                   className="card viewSideCard"
                   data-aos="fade-left"
@@ -217,7 +217,7 @@ function TourView() {
                       ) : (
                         Number(tourData.price).toFixed(0)
                       )}
-                      <span className="fw-normal fs-6 mt-2 ps-1">
+                      <span className="fw-normal fs-6 mt-2 ps-1 perPerson">
                         per person
                       </span>
                     </h5>
@@ -348,7 +348,7 @@ function TourView() {
               </div>
 
               {/* =============================================== rightside bottom Card  ===================================================  */}
-              <div className="col-6 col-md-12 mt-md-4">
+              <div className="col-12 col-md-12 mt-md-4 mt-3">
                 <div
                   className="card bg-light viewSideCard"
                   data-aos="fade-left"
@@ -371,20 +371,20 @@ function TourView() {
                       </span>
                     </div>
                     {/* ======================================= Icon row inside card =========================================== */}
-                    <div className="row mt-3 ms-4 ps-3 ps-lg-0 ms-lg-3 ms-xl-5">
-                      <div className="col-12 col-lg-6 mb-3  mb-lg-4 ">
+                    <div className="row mt-3 ms-4 ps-3 ps-lg-0 ms-lg-3 ms-xl-5 mx-auto">
+                      <div className="col-6 col-sm-12 col-lg-6 mb-3  mb-lg-4 ">
                         <FaHotel className="fs-5 text-primary" />
                         <span className="ps-3">Hotel</span>
                       </div>
-                      <div className="col-12 col-lg-6 mb-3  mb-lg-4 ">
+                      <div className="col-6 col-sm-12 col-lg-6 mb-3  mb-lg-4 ">
                         <FaCarSide className="fs-5 text-primary" />
                         <span className="ps-3">Transfer</span>
                       </div>
-                      <div className="col-12 col-lg-6 mb-3">
+                      <div className="col-6 col-sm-12 col-lg-6 mb-3">
                         <FaMapMarkedAlt className="fs-5 text-primary" />
                         <span className="ps-3">Explore</span>
                       </div>
-                      <div className="col-12 col-lg-6">
+                      <div className="col-6 col-sm-12 col-lg-6">
                         <GiMeal className="fs-5 text-primary" />
                         <span className="ps-3">Meal</span>
                       </div>

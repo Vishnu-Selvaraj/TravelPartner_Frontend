@@ -105,7 +105,7 @@ const Card = (props) => {
         <div className="container">
           <div className="row">
             <div className="col mt-5 text-center py-4">
-              <img src={notFoundImg} alt="notFound" className="notFoundImage" />
+              <img src={notFoundImg} alt="notFound" className="notFoundImage img-fluid" />
               <div className="text-secondary h5 notFoundText">
                 No data Found
               </div>

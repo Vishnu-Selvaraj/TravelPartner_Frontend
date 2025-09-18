@@ -49,7 +49,6 @@ const BookingConfirmation = () => {
     }
   };
 
-
   return (
     <div id="BookingConfirmMainDiv">
       <Navbar />

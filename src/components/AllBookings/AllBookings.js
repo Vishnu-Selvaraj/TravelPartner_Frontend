@@ -61,13 +61,13 @@ function AllBookings() {
       setUserBookingData([]);
       if (isLoading) {
         setTimeout(() => {
-          setErrorMessage(error.response.data.error);
+          setErrorMessage(error?.response?.data?.error);
         }, 1500);
       }
     }
   };
 
-  console.log(selectedOption);
+  // console.log(selectedOption);
 
   /*===================================== Function handle search ** Serach Term send from Search component as argument of call back function passed as props============================================= */
 
@@ -79,7 +79,7 @@ function AllBookings() {
       var dataRelatedToSearchTerm = userBookingData.filter((data) =>
         data.place_name.trim().toLowerCase().includes(normalizeSearchTerm)
       );
-      console.log(dataRelatedToSearchTerm);
+      // console.log(dataRelatedToSearchTerm);
       setFilteredData(dataRelatedToSearchTerm);
     }
   };
@@ -95,7 +95,6 @@ function AllBookings() {
         Authorization: `Token ${token}`,
       },
     };
-    console.log(userBookingId);
 
     if (token) {
       try {
@@ -104,7 +103,6 @@ function AllBookings() {
           { user_booking_id: userBookingId },
           options
         );
-        console.log(response);
         toast.success(response.data.message, {
           style: {
             borderRadius: "10px",

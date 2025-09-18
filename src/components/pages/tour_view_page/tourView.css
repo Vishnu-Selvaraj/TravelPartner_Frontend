@@ -92,3 +92,8 @@
     }
 }
 
+@media (max-width:400px){
+    .perPerson{
+        font-size: 0.8rem !important;
+    }
+}
