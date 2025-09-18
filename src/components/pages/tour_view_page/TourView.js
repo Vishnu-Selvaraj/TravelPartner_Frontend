@@ -126,11 +126,10 @@ function TourView() {
         {
           /* =============================================== In below removing the backdrop-effect by modal after click on book button ===================================================  */
         }
-
-        const backdrop = document.querySelector(".modal-backdrop");
-        if (backdrop) {
-          backdrop.remove(); // Remove the backdrop manually
-        }
+        document.querySelectorAll(".modal-backdrop").forEach((el) => el.remove());
+        document.body.classList.remove("modal-open");
+        document.body.style.removeProperty("overflow");
+        document.body.style.removeProperty("padding-right");
 
         toast.success(
           "A confirmation has been successfully sent to your email!",

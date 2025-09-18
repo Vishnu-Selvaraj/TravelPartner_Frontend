@@ -167,7 +167,7 @@ function AllBookings() {
         </div>
 
         {errorMessage && (
-          <div className="text-center text-light mt-3 fw-bold display-6 errorText">
+          <div className="text-center mt-3 fw-bold display-6 errorText">
             {errorMessage}
           </div>
         )}

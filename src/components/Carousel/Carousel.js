@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./carousel.css";
 import LoaderAnimation from "../LoaderAnimation/LoaderAnimation";
+import { Carousel as BootstrapCarousel } from "bootstrap";
 
 function Carousel(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,10 +9,9 @@ function Carousel(props) {
   useEffect(() => {
     // Manually initialize the carousel
     const carouselElement = document.querySelector("#carouselExampleFade");
-    const carousel = new window.bootstrap.Carousel(carouselElement, {
-      interval: 2000,
-      ride: "carousel", // Starts sliding automatically
-    });
+    if (carouselElement) {
+    new BootstrapCarousel(carouselElement, { interval: 2000, ride: "carousel" });
+  }
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
