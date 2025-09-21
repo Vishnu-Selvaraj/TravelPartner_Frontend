@@ -22,7 +22,8 @@
     top: 4px;
     right: 4px;
     padding: 4px 15px !important;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0.09rem 0.09rem 5px #222;
     color: #222;
     font-weight: 500;
 }

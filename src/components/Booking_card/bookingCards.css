@@ -24,7 +24,8 @@
     top: 5px;
     right: 5px;
     padding: 4px 15px !important;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    box-shadow: 0.09rem 0.09rem 4px #1e65d1;
 }
 
 .title-icon{

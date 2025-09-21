@@ -10,8 +10,11 @@ function Carousel(props) {
     // Manually initialize the carousel
     const carouselElement = document.querySelector("#carouselExampleFade");
     if (carouselElement) {
-    new BootstrapCarousel(carouselElement, { interval: 2000, ride: "carousel" });
-  }
+      new BootstrapCarousel(carouselElement, {
+        interval: 2000,
+        ride: "carousel",
+      });
+    }
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
